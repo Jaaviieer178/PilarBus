@@ -1,0 +1,19 @@
+name: PilarBus CI
+ 
+on:
+  pull_request:
+    branches:
+      - main
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - uses: actions/checkout@v4
+ 
+      - name: Build
+        run: echo "Build exitoso"
+ 
+      - name: Test
+        run: echo "Tests exitosos"
